@@ -1,0 +1,116 @@
+.main-show-product-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.show-product-gray-bg {
+    position: absolute;
+    background-color: gray;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .show-product-modal {
+        width: 100%;
+        height: 100%;
+        max-height: 650px;
+        max-width: 750px;
+        background-color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+    }
+
+
+    .show-product-modal-cols-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .show-title-row {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        & i {
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        & .show-product-title {
+            margin: auto;
+            margin-top: 20px;
+        }
+    
+    }
+
+    .show-product-modal-left-col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        padding: 0 25px 0 25px;
+        row-gap: 15px;
+
+        & input[placeholder="Costo Bruto"] {
+            max-width: 190px;
+            margin-right: 10px;
+        }
+
+        
+        & .show-product-modal-one-row {
+            display: flex;
+            & .p-dropdown {
+                flex-basis: 50%;
+            }
+        }
+       
+    }
+
+    .resumen {
+        display: flex;
+        column-gap: 35px;
+    }
+
+    .show-submit {
+        position: absolute;
+        bottom: 30px;
+        left: 40%;
+    }
+
+    .show-product-modal-right-col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+
+        & .datatable-product-image {
+            width: 100%;
+            max-width: 240px;
+            margin: auto;
+        }
+
+
+        & .p-fileupload {
+            width: 300px;
+            height: 200px;
+            margin: auto;
+
+            & button[aria-label="Upload"], button[aria-label="Cancel"] {
+                display: none;
+            }
+        }
+    }
+
+}

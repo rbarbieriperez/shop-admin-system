@@ -1,0 +1,65 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .table {
+    
+
+        .p-inputtext {
+            width: 150px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .table {
+        
+
+        .p-inputtext {
+            width: 150px;
+        }
+        
+
+        & .p-datatable {
+           
+        }
+
+        & .datatable-product-image {
+            max-width: 50px;
+        }
+
+        & .p-datatable-table {
+            
+        }
+
+        & .p-datatable-wrapper {
+
+
+
+    
+
+        }
+
+        & .p-paginator {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+    }
+
+
+    .search-input {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .options-container {
+        display: flex;
+        column-gap: 5px;
+    }
+}
